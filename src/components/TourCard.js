@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 const TourCard = () =>{
   return (
     <Grid item xs={3}>
+        <Box />
         <Paper elevation={10}  square> TEST HELLO WORLD! </Paper>
     </Grid>
     
