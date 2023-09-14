@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import TourCard from './components/TourCard';
