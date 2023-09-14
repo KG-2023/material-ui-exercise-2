@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
 // import './App.css';
+import TourCard from './components/TourCard';
 
 function App() {
   return (
     <div className="App">
-      <h1> HELLO MATERIAL UI WORLD!</h1>
+      <TourCard />
     </div>
   );
 }
