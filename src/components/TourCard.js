@@ -9,13 +9,25 @@ const TourCard = () =>{
   return (
     <Grid item xs={3}>
        
-        <Paper elevation={10}  square> TEST HELLO WORLD! </Paper>
+        
         <Paper elevation={10}  square> 
           <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-balaji-srinivasan-3936815.jpg" className="paperImage" />
+          <Box paddingX={1}>
+            <Typography variant="subtitle1" component="h2">
+              Tabung Hampi
+            </Typography>
+          </Box>
+          <Box 
+            sx={{
+              display: "flex",
+              alignItems: "center"
+            }}
+          >
+            <Typography variant='body2'>
+                5 hours
+            </Typography>
+          </Box>
           
-          <Typography variant="h2" component="h2">
-            Tabung Hampi
-          </Typography>
 
         </Paper>
     </Grid>
