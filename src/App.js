@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Grid container spacing={1}>
+        <Grid container spacing={5}>
+        <TourCard />
+        <TourCard />
+        <TourCard />
         <TourCard />
         </Grid>
       </Container>

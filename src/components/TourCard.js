@@ -1,10 +1,16 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
 
 const TourCard = () =>{
-  return <Paper elevation={15} variant="outlined" square> TEST HELLO WORLD! </Paper>
+  return (
+    <Grid item xs={3}>
+        <Paper elevation={10}  square> TEST HELLO WORLD! </Paper>
+    </Grid>
+    
+  )
 }
 
 
