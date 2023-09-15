@@ -34,7 +34,7 @@ const theme = createTheme({
 });
 
 
-const TourCard = () =>{
+const TourCard = ({tour}) =>{
   return (
     <Grid item xs={3}>
         <ThemeProvider theme={theme}>
@@ -42,7 +42,8 @@ const TourCard = () =>{
               <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-balaji-srinivasan-3936815.jpg" className="paperImage" />
               <Box paddingX={1}>
                 <Typography variant="subtitle1" component="h2">
-                  Tabung Hampi
+                
+                {tour.name}
                 </Typography>
               </Box>
               <Box 
@@ -53,7 +54,7 @@ const TourCard = () =>{
               >
                 <AccessTime sx={{width:12.5}} />
                 <Typography variant='body2' component='p' marginLeft={0.5}>
-                    5 hours
+                {tour.duration} hours
                 </Typography>
               </Box>
               <Box marginTop={3}
@@ -63,8 +64,8 @@ const TourCard = () =>{
                 }}
               >
                 <Rating name="read-only" value={4.5} readOnly precision={0.5} />
-                <Typography variant="body2" component="p" marginLeft={0.5}>4.5</Typography>
-                <Typography variant="body3" component="p" marginLeft={1.5}>(500 Reviews)</Typography>
+                <Typography variant="body2" component="p" marginLeft={0.5}> {tour.rating}</Typography>
+                <Typography variant="body3" component="p" marginLeft={1.5}>( {tour.numberOfReviews})</Typography>
                 
               </Box>
               <Box>
