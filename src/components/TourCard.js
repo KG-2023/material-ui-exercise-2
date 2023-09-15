@@ -30,13 +30,19 @@ const TourCard = () =>{
                 5 hours
             </Typography>
           </Box>
-          <Box 
+          <Box marginTop={3}
             sx={{
               display: "flex",
               alignItms: "center"
             }}
           >
             <Rating name="read-only" value={4.5} readOnly precision={0.5} />
+            <Typography variant="body2" component="p" marginLeft={0.5}>4.5</Typography>
+            <Typography variant="body3" component="p" marginLeft={1.5}>(500 Reviews)</Typography>
+            
+          </Box>
+          <Box>
+          <Typography variant="h6" component="h3" marginLeft={1.5}>From Php 1000</Typography>
           </Box>
           
 
