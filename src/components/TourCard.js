@@ -39,7 +39,8 @@ const TourCard = ({tour}) =>{
     <Grid item xs={3}>
         <ThemeProvider theme={theme}>
             <Paper elevation={10}  square> 
-              <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-balaji-srinivasan-3936815.jpg" className="paperImage" />
+              {/* <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-balaji-srinivasan-3936815.jpg" className="paperImage" /> */}
+              <img className="paperImage" src={tour.image} />
               <Box paddingX={1}>
                 <Typography variant="subtitle1" component="h2">
                 
