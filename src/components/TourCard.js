@@ -5,6 +5,24 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {AccessTime} from '@mui/icons-material';
 import Rating from '@mui/material/Rating';
+import { createTheme } from '@mui/material';
+
+const theme = createTheme({
+      components:{
+        MUITypography: {
+          variants: [
+            {
+              props: {
+                variant: "body2",
+              style:{
+                  fontSize: 11,
+                }
+              }
+            }
+          ]
+        }
+      }
+});
 
 
 const TourCard = () =>{
