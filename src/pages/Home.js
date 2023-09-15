@@ -6,7 +6,7 @@ import cities from "../data.json";
 
 
 const Home =() =>{
-    return (<div className="App">
+     return <div className="App">
        
       <Container sx={{marginY:5}}>
        
@@ -28,7 +28,7 @@ const Home =() =>{
           
         ))}
       </Container>
-    </div>)
+    </div>
 }
 
 export default Home;
