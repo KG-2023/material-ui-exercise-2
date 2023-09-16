@@ -2,15 +2,15 @@ import TourCard from "../components/TourCard";
 import Container from '@mui/material/Container';
 import {Typography} from '@mui/material/';
 import Grid from '@mui/material/Grid';
-import cities from "../data.json";
+import CityList from "../data.json";
 
 
 const Home =() =>{
-     return <div className="App">
+    return <div className="App">
        
       <Container sx={{marginY:5}}>
        
-        {cities.map((city) =>(
+        {CityList.map((city) =>(
           <><Typography 
              variant="h4"
              component="h2"

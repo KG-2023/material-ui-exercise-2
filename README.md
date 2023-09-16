@@ -1,5 +1,6 @@
 ```
 https://{username}.github.io/{repo-name}
+ <img className="paperImage" src={tour.image} />
 ```
 # Getting Started with Create React App
 
