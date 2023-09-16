@@ -2,6 +2,7 @@ import {Container} from '@mui/material'
 import { Typography } from '@mui/material/';
 import Box from '@mui/material/Box';
 import ImageItems from "../components/ImageItems";
+import CustomizedAccordions from "../components/Accordion";
 const Tour = () => {
     return <Container>
             <Typography variant="h3" component="h1" marginTop={3}>
@@ -18,6 +19,7 @@ const Tour = () => {
                     Trivia information about the Rice Terraces, among the wonders of the world. Some of the wonders of the world were created out of slavery. 
                     The Rice terraces was created out of collaboration and creativity.
                 </Typography>
+                <CustomizedAccordions />
             </Box>
         </Container>
     
