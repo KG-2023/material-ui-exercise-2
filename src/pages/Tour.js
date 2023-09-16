@@ -1,8 +1,10 @@
-import {Container} from '@mui/material'
+import BottomNavigation from '@mui/material/BottomNavigation'
+import Container from '@mui/material/Container';
 import { Typography } from '@mui/material/';
 import Box from '@mui/material/Box';
 import ImageItems from "../components/ImageItems";
 import CustomizedAccordions from "../components/Accordion";
+import Paper from '@mui/material/Paper';
 const Tour = () => {
     return <Container>
             <Typography variant="h3" component="h1" marginTop={3}>
@@ -22,12 +24,16 @@ const Tour = () => {
 
                 
             </Box>
-            <Box >
+            <Box marginBottom={15} >
                 <Typography variant="h5" component="h3" marginTop={3} marginBottom={2}>
                     Frequently Asked Questions
                 </Typography>
             <CustomizedAccordions />
             </Box>
+            <Paper sx={{position:'fixed', bottom:0, left:0, right:0}} elevation={0} variant="outlined" square={false}>
+            <BottomNavigation showLabels ></BottomNavigation>
+            </Paper>
+
         </Container>
     
 }
