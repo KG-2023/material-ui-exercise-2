@@ -10,8 +10,8 @@ function App() {
     <Router>
       <AppBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<Tour />}/>
+        <Route path="/material-ui-exercise-2" element={<Home />} />
+        <Route path="/material-ui-exercise-2/:id" element={<Tour />}/>
       </Routes>
     </Router>
   );
