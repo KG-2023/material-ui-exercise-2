@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import {AccessTime} from '@mui/icons-material';
+import AccessTime from '@mui/icons-material/AccessTime';
 import Rating from '@mui/material/Rating';
 import { createTheme, ThemeProvider  } from '@mui/material/';
 import BookNow from './Modal';
@@ -55,7 +55,7 @@ const TourCard = ({tour}) =>{
                   alignItems: "center"
                 }}
               >
-                <AccessTime sx={{width:12.5}} />
+                <AccessTime sx={{width:12.5, paddingX:2}} />
                 <Typography variant='body2' component='p' marginLeft={0.5}>
                 {tour.duration} hours
                 </Typography>

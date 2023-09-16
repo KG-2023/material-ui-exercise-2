@@ -14,7 +14,6 @@ const Tour = () => {
             <Box marginTop={3} 
                 sx={{display: "flex"}}
             >
-               
                 <ImageItems />  
                 <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-rennon-kiefer-2412711.jpg"  alt="Rice Terraces" height="325" width="500"/>
             </Box>
