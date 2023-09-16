@@ -30,8 +30,8 @@ const Tour = () => {
                 </Typography>
             <CustomizedAccordions />
             </Box>
-            <Paper sx={{position:'fixed', bottom:0, left:0, right:0}} elevation={0} variant="outlined" square={false}>
-            <BottomNavigation showLabels ></BottomNavigation>
+            <Paper sx={{position:'fixed', bottom:0, left:0, right:0,backgroundColor:"blue"}} elevation={0} variant="outlined" square={false}>
+            <BottomNavigation showLabels sx={{backgroundColor:"blue"}} ></BottomNavigation>
             </Paper>
 
         </Container>

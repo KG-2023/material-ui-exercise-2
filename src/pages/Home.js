@@ -5,6 +5,8 @@ import Grid from '@mui/material/Grid';
 import CityList from "../data.json";
 import Pagination from '../components/Pagination';
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import BottomNavigation from '@mui/material/BottomNavigation'
 
 const Home =() =>{
     return <div className="App">
@@ -30,9 +32,14 @@ const Home =() =>{
           </>
           
         ))}
-          <Box marginTop={5} marginLeft={50}>
+          <Box marginTop={5} marginLeft={50} marginBottom={10}>
             <Pagination />
           </Box>
+          <Paper sx={{position:'fixed', bottom:0, left:0, right:0}} elevation={0}  square={false}>
+          <BottomNavigation showLabels sx={{backgroundColor:"#2196f3 "}}></BottomNavigation>
+          </Paper>
+        
+        
       </Container>
     </div>
 }
