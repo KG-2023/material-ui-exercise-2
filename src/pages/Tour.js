@@ -6,7 +6,7 @@ import ImageItems from "../components/ImageItems";
 import CustomizedAccordions from "../components/Accordion";
 import Paper from '@mui/material/Paper';
 const Tour = () => {
-    return <Container>
+    return <Container sx={{width: 900}}>
             <Typography variant="h3" component="h1" marginTop={3}>
                 Explore the Rice Terraces
 
@@ -14,9 +14,12 @@ const Tour = () => {
             <Box marginTop={3} 
                 sx={{display: "flex"}}
             >
+               
                 <ImageItems />  
+                <img src="https://raw.githubusercontent.com/KG-2023/Activity-Images-2023/ec633589ea59e21cc1d3aca3e84cc9ab7a7ce0ba/pexels-rennon-kiefer-2412711.jpg"  alt="Rice Terraces" height="325" width="500"/>
             </Box>
             <Box >
+                <Typography variant="h5" component="h3" marginTop={3}>TOUR TRIVIA</Typography>
                 <Typography variant="paragraph" component="p" marginTop={3}>
                     Trivia information about the Rice Terraces, among the wonders of the world. Some of the wonders of the world were created out of slavery. 
                     The Rice terraces was created out of collaboration and creativity.
