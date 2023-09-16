@@ -49,13 +49,13 @@ const TourCard = ({tour}) =>{
                 {tour.name}
                 </Typography>
               </Box>
-              <Box 
+              <Box paddingX={5}
                 sx={{
                   display: "flex",
                   alignItems: "center"
                 }}
               >
-                <AccessTime sx={{width:12.5, paddingX:2}} />
+                <AccessTime sx={{width:12.5}} />
                 <Typography variant='body2' component='p' marginLeft={0.5}>
                 {tour.duration} hours
                 </Typography>
