@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import {AccessTime} from '@mui/icons-material';
 import Rating from '@mui/material/Rating';
 import { createTheme, ThemeProvider  } from '@mui/material/';
+import BookNow from './Modal';
+import BottomNavigation from '@mui/material/BottomNavigation'
 
 const theme = createTheme({
       components:{
@@ -72,7 +74,9 @@ const TourCard = ({tour}) =>{
               <Box>
               <Typography variant="h6" component="h3" marginLeft={1.5}>From Php 1000</Typography>
               </Box>
-              
+              <BottomNavigation>
+                <BookNow />
+              </BottomNavigation>
 
             </Paper>
         </ThemeProvider>

@@ -1,50 +1,44 @@
 import * as React from 'react';
-import Button from '@mui/joy/Button';
-import Modal from '@mui/joy/Modal';
-import ModalClose from '@mui/joy/ModalClose';
-import Typography from '@mui/joy/Typography';
-import Sheet from '@mui/joy/Sheet';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 export default function BasicModal() {
   const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
-    <React.Fragment>
-      <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
-        Open modal
-      </Button>
+    <div>
+      <Button onClick={handleOpen}>BOOK NOW</Button>
       <Modal
-        aria-labelledby="modal-title"
-        aria-describedby="modal-desc"
         open={open}
-        onClose={() => setOpen(false)}
-        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
-        <Sheet
-          variant="outlined"
-          sx={{
-            maxWidth: 500,
-            borderRadius: 'md',
-            p: 3,
-            boxShadow: 'lg',
-          }}
-        >
-          <ModalClose variant="plain" sx={{ m: 1 }} />
-          <Typography
-            component="h2"
-            id="modal-title"
-            level="h4"
-            textColor="inherit"
-            fontWeight="lg"
-            mb={1}
-          >
-            This is the modal title
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
           </Typography>
-          <Typography id="modal-desc" textColor="text.tertiary">
-            Make sure to use <code>aria-labelledby</code> on the modal dialog with an
-            optional <code>aria-describedby</code> attribute.
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
-        </Sheet>
+        </Box>
       </Modal>
-    </React.Fragment>
+    </div>
   );
 }
