@@ -13,6 +13,12 @@ const Tour = () => {
             >
                 <ImageItems />  
             </Box>
+            <Box >
+                <Typography variant="paragraph" component="p" marginTop={3}>
+                    Trivia information about the Rice Terraces, among the wonders of the world. Some of the wonders of the world were created out of slavery. 
+                    The Rice terraces was created out of collaboration and creativity.
+                </Typography>
+            </Box>
         </Container>
     
 }
