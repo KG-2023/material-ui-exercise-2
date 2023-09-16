@@ -36,7 +36,11 @@ const Home =() =>{
             <Pagination />
           </Box>
           <Paper sx={{position:'fixed', bottom:0, left:0, right:0}} elevation={0}  square={false}>
-          <BottomNavigation showLabels sx={{backgroundColor:"#2196f3 "}}></BottomNavigation>
+          <BottomNavigation showLabels sx={{backgroundColor:"#2196f3 "}}>
+            <Typography component="p" paddingY={2}>
+              &#169; 2023
+            </Typography>
+          </BottomNavigation>
           </Paper>
         
         
