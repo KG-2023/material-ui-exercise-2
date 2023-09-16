@@ -10,8 +10,8 @@ function App() {
     <Router>
       <AppBar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/:id" element={<Tour />}/>
+        <Route exact path="/material-ui-exercise-2" element={<Home />} />
+        <Route path="material-ui-exercise-2/:id" element={<Tour />}/>
       </Routes>
     </Router>
   );
